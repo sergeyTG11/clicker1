@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Снежная игра</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <div class="title">Снежная игра</div>
+        <div class="button" id="play-button">Играть</div>
+        <div class="button" id="support-button">Поддержать меня</div>
+        <audio id="menu-track" loop>
+            <source src="assets/sounds/menu-track.mp3" type="audio/mpeg">
+        </audio>
+        <div id="snow"></div>
+    </div>
+    <div id="support-screen">
+        <div class="support-content">
+            <h2>Поддержать разработчика</h2>
+            <p>Если вам нравится игра, вы можете поддержать меня:</p>
+            <div class="support-methods">
+                <div class="method">QIWI: 1234567890</div>
+                <div class="method">ЮMoney: 410011234567890</div>
+            </div>
+            <div class="button" id="back-button">Назад</div>
+        </div>
+    </div>
+    <div id="game">
+        <div id="game-menu">
+            <div class="money">Монеты: <span id="coins">1</span></div>
+            <div class="item" id="house-item">Купить домик (<span id="house-price">1</span> монета)</div>
+            <div class="item" id="defense-house-item">Купить защитный домик (<span id="defense-house-price">5</span> монет)</div>
+            <div class="item" id="finish-level">Закончить уровень</div>
+        </div>
+    </div>
+    <audio id="coin-sound" preload="auto">
+        <source src="assets/sounds/coin.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
